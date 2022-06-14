@@ -1,4 +1,4 @@
-﻿namespace EnglishCardsApp.Domain.Entities
+﻿namespace LanguageCardsApp.Domain.Entities
 {
     public class LanguageCardSet
     {

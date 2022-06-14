@@ -3,7 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageCardsApp.Domain", "LanguageCardsApp.Domain\LanguageCardsApp.Domain.csproj", "{F8C4DCE5-F9E3-4810-B118-AE215B3DB931}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanguageCardsApp.Domain", "LanguageCardsApp.Domain\LanguageCardsApp.Domain.csproj", "{F8C4DCE5-F9E3-4810-B118-AE215B3DB931}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanguageCardsApp.Application", "LanguageCardsApp.Application\LanguageCardsApp.Application.csproj", "{D2030909-AAC7-47CC-A46C-77AD196AA3E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1BC3A70B-F2DC-4A1D-A1BC-E49878C392CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageCardsApp.Infrastructure", "LanguageCardsApp.Infrastructure\LanguageCardsApp.Infrastructure.csproj", "{4C010DD7-8EE2-4777-AA86-1C81A0E12423}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageCardsApp.Domain.UnitTests", "LanguageCardsApp.Domain.Tests\LanguageCardsApp.Domain.UnitTests.csproj", "{A92A1574-5B72-4F05-8002-093AC2440A99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageCardsApp.Application.UnitTests", "LanguageCardsApp.Application.Tests\LanguageCardsApp.Application.UnitTests.csproj", "{B8003EAB-3250-4EF9-8971-234153D8D0A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageCardsApp.Infrastructure.IntegrationTests", "LanguageCardsApp.Infrastructure.IntegrationTests\LanguageCardsApp.Infrastructure.IntegrationTests.csproj", "{E6CC20E9-5504-478C-BF2D-4CEACFE63BE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A35EE893-17D6-4ABE-9679-0B777CD37292}"
+	ProjectSection(SolutionItems) = preProject
+		..\LICENSE = ..\LICENSE
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{552DEDB8-7114-43E3-B9B8-6DED3462B2A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +34,37 @@ Global
 		{F8C4DCE5-F9E3-4810-B118-AE215B3DB931}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8C4DCE5-F9E3-4810-B118-AE215B3DB931}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8C4DCE5-F9E3-4810-B118-AE215B3DB931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2030909-AAC7-47CC-A46C-77AD196AA3E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2030909-AAC7-47CC-A46C-77AD196AA3E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2030909-AAC7-47CC-A46C-77AD196AA3E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2030909-AAC7-47CC-A46C-77AD196AA3E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C010DD7-8EE2-4777-AA86-1C81A0E12423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C010DD7-8EE2-4777-AA86-1C81A0E12423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C010DD7-8EE2-4777-AA86-1C81A0E12423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C010DD7-8EE2-4777-AA86-1C81A0E12423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A92A1574-5B72-4F05-8002-093AC2440A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92A1574-5B72-4F05-8002-093AC2440A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A92A1574-5B72-4F05-8002-093AC2440A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A92A1574-5B72-4F05-8002-093AC2440A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8003EAB-3250-4EF9-8971-234153D8D0A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8003EAB-3250-4EF9-8971-234153D8D0A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8003EAB-3250-4EF9-8971-234153D8D0A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8003EAB-3250-4EF9-8971-234153D8D0A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6CC20E9-5504-478C-BF2D-4CEACFE63BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6CC20E9-5504-478C-BF2D-4CEACFE63BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6CC20E9-5504-478C-BF2D-4CEACFE63BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6CC20E9-5504-478C-BF2D-4CEACFE63BE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8C4DCE5-F9E3-4810-B118-AE215B3DB931} = {552DEDB8-7114-43E3-B9B8-6DED3462B2A1}
+		{D2030909-AAC7-47CC-A46C-77AD196AA3E5} = {552DEDB8-7114-43E3-B9B8-6DED3462B2A1}
+		{4C010DD7-8EE2-4777-AA86-1C81A0E12423} = {552DEDB8-7114-43E3-B9B8-6DED3462B2A1}
+		{A92A1574-5B72-4F05-8002-093AC2440A99} = {1BC3A70B-F2DC-4A1D-A1BC-E49878C392CF}
+		{B8003EAB-3250-4EF9-8971-234153D8D0A3} = {1BC3A70B-F2DC-4A1D-A1BC-E49878C392CF}
+		{E6CC20E9-5504-478C-BF2D-4CEACFE63BE3} = {1BC3A70B-F2DC-4A1D-A1BC-E49878C392CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EDDEE3E-5B9F-4B65-816E-4F898F8F16B1}
